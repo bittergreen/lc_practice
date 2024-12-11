@@ -1,6 +1,6 @@
 package dp;// 198. House Robber
 
-public class Solution43 {
+public class Solution198 {
 
     public int rob(int[] nums) {
         // dp[i] = Math.max(dp[i-2]+nums[i], dp[i-1])

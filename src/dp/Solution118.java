@@ -1,7 +1,7 @@
 package dp;// 118. Pascal's Triangle
 import java.util.*;
 
-public class Solution42 {
+public class Solution118 {
     public List<List<Integer>> generate(int numRows) {
         // dp[i][j] = dp[i-1][j-1] + dp[i-1][j]
         List<List<Integer>> res = new ArrayList<>(numRows);

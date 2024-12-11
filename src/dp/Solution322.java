@@ -3,7 +3,7 @@ package dp;// 322. Coin Change
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution50 {
+public class Solution322 {
 
     int total;
     int curSum;
@@ -75,7 +75,7 @@ public class Solution50 {
     }
 
     public static void main(String[] args) {
-        Solution50 sol = new Solution50();
+        Solution322 sol = new Solution322();
         int[] coins = {186,419,83,408};
         int amount = 6249;
         System.out.println(sol.coinChange(coins, amount));

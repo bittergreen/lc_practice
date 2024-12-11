@@ -1,7 +1,7 @@
 package dp;
 
 // 279. Perfect Squares
-public class Solution44 {
+public class Solution279 {
     public int numSquares(int n) {
         // dp: least numbers added nums
         // dp[i] = min(dp[i], dp[i-j*j] + 1)
@@ -16,7 +16,7 @@ public class Solution44 {
     }
 
     public static void main(String[] args) {
-        Solution44 sol = new Solution44();
+        Solution279 sol = new Solution279();
         System.out.println(sol.numSquares(12));
     }
 }

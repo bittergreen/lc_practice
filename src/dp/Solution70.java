@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // 70.Climbing stairs
-public class Solution41 {
+public class Solution70 {
     public int climbStairs(int n) {
         Map<Integer, Integer> memory = new HashMap<>();
         return climb(n, memory);
