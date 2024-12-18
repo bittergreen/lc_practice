@@ -4,19 +4,24 @@ from typing import List
 
 class Solution:
     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
+        n = len(spells)
+        m = len(potions)
+        pairs = [0] * n
         potions = sorted(potions)
-        pairs = [0] * len(spells)
-        # spell * potion >= success
+
         for i, spell in enumerate(spells):
+            target = success / spell
+            # find the first element in potions that >= target
             left = 0
-            right = len(potions) - 1
-            while left <= right:
+            right = m
+            while left < right:
                 mid = (left + right) // 2
-                if spell * potions[mid] >= success:
-                    right = mid - 1
+                if potions[mid] >= target:
+                    right = mid
                 else:
                     left = mid + 1
-            pairs[i] = len(potions) - left
+            pairs[i] = m - left
+
         return pairs
 
 
