@@ -1,7 +1,7 @@
 package tree;
 
 // 101. 对称二叉树
-public class Solution24 {
+public class Solution101 {
 
     public boolean isSymmetric(TreeNode root) {
         return (root == null || recur(root.left, root.right));

@@ -1,5 +1,7 @@
+package doublepointers;
+
 // 283. Move Zeroes
-public class Solution30 {
+public class Solution283 {
     public void moveZeroes(int[] nums) {
         int i = 0;
         for (int j=0; j<nums.length; j++) {

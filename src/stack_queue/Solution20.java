@@ -1,40 +1,34 @@
-package stack;
+package stack_queue;
 
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 // 20. Valid Parentheses
 public class Solution20 {
 
     public boolean isValid(String s) {
+        HashMap<Character, Character> match = new HashMap<>();
+        match.put(')', '(');
+        match.put(']', '[');
+        match.put('}', '{');
         Deque<Character> stack = new LinkedList<>();
-        for (int i=0; i<s.length(); i++) {
-            Character c = s.charAt(i);
-            if (stack.isEmpty()) {
-                stack.push(c);
+
+        for (char ch: s.toCharArray()) {
+            if (stack.isEmpty() || !match.containsKey(ch)) {
+                stack.push(ch);
             } else {
                 Character top = stack.pop();
-                if (!match(c, top)) {
+                if (match.get(ch) != top) {
                     stack.push(top);
-                    stack.push(c);
+                    stack.push(ch);
                 }
             }
         }
+
         return stack.isEmpty();
     }
 
-    boolean match(Character a, Character b) {
-        if (a == ')') {
-            return b == '(';
-        }
-        if (a == ']') {
-            return b == '[';
-        }
-        if (a == '}') {
-            return b == '{';
-        }
-        return false;
-    }
 
     public static void main(String[] args) {
         String s = "()[]{}";

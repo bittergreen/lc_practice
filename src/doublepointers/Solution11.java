@@ -1,5 +1,7 @@
+package doublepointers;
+
 // 11. 盛最多水的容器
-public class Solution25 {
+public class Solution11 {
 
     public int maxArea(int[] height) {
 

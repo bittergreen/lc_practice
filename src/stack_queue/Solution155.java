@@ -1,4 +1,4 @@
-package stack;
+package stack_queue;
 
 // 155. Min Stack
 

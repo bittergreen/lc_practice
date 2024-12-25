@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // 94. 二叉树的中序遍历
-public class Solution22 {
+public class Solution94 {
 
     public List<Integer> inorderTraversal(TreeNode root) {
 
