@@ -1,5 +1,7 @@
+package doublepointers;
+
 // 560. Subarray Sum Equals K
-public class Solution34 {
+public class Solution560 {
     public int subarraySum(int[] nums, int k) {
         int res = 0;
         // double pointers

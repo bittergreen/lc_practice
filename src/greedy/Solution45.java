@@ -1,5 +1,7 @@
+package greedy;
+
 // 45. 跳跃游戏 II
-public class Solution9 {
+public class Solution45 {
 
     public int jump(int[] nums) {
         int step = 0;
@@ -26,7 +28,7 @@ public class Solution9 {
 
     public static void main(String[] args) {
         int[] nums = {2,1};
-        Solution9 sol = new Solution9();
+        Solution45 sol = new Solution45();
         int res = sol.jump(nums);
         System.out.println(res);
     }

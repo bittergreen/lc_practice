@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // 22. Generate Parentheses
-public class Solution49 {
+public class Solution22 {
 
     List<String> res = new ArrayList<>();
     StringBuilder path = new StringBuilder();
@@ -55,7 +55,7 @@ public class Solution49 {
     }
 
     public static void main(String[] args) {
-        Solution49 sol = new Solution49();
+        Solution22 sol = new Solution22();
         System.out.println(sol.generateParenthesis(3));
     }
 }

@@ -1,5 +1,7 @@
+package array_string;
+
 // 53. Maximum Subarray
-public class Solution35 {
+public class Solution53 {
     public int maxSubArray(int[] nums) {
         int ans = nums[0];
         int sum = 0;

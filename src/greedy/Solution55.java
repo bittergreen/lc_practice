@@ -1,7 +1,7 @@
 package greedy;
 
 // 55. 跳跃游戏
-public class Solution8 {
+public class Solution55 {
 
     public boolean canJump(int[] nums) {
 

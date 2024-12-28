@@ -1,5 +1,7 @@
+package array_string;
+
 // 189. Rotate Array
-public class Solution37 {
+public class Solution189 {
     public void rotate(int[] nums, int k) {
         if (k > nums.length) {
             k = k % nums.length;
@@ -22,7 +24,7 @@ public class Solution37 {
 
     public static void main(String[] args) {
         int[] nums = {1,2,3,4,5,6,7};
-        Solution37 sol = new Solution37();
+        Solution189 sol = new Solution189();
         sol.rotate(nums, 3);
     }
 }
