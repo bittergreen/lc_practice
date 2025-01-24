@@ -1,6 +1,5 @@
 # 236. 二叉树的最近公共祖先
-
-from trees import TreeNode
+from trees.TreeNode import TreeNode
 
 
 class Solution:
